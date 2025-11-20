@@ -1,0 +1,398 @@
+{
+  "slider": [
+    {
+      "id": 1,
+      "images": "https://www.dastresi.com/upload/filemanager/2023/12/24/banner-dastresi-1%20(1).png",
+      "alt": "test"
+    },
+    {
+      "id": 2,
+      "images": "https://www.dastresi.com/upload/filemanager/2023/12/24/banner-dastresi-4-min.png",
+      "alt": "test"
+    },
+    {
+      "id": 3,
+      "images": "https://www.dastresi.com/upload/filemanager/2023/12/24/banner-dastresi-2-min.png",
+      "alt": "test"
+    }
+  ],
+  "offdays": [
+    {
+      "id": 1,
+      "title": "پاوربانک 20000 میلی آمپر انکر مدل A1383",
+      "oldPrice": 5440000,
+      "newPrice": 4957000,
+      "images": "https://www.dastresi.com/upload/filemanager/2024/08/26/anker-1383-11.jpg"
+    },
+    {
+      "id": 2,
+      "title": "کیت تمیزکننده صفحه نمایش Somo SM450",
+      "oldPrice": 115000,
+      "newPrice": 85000,
+      "images": "https://www.dastresi.com/upload/filemanager/2024/07/30/SOMO450-11.jpg"
+    },
+    {
+      "id": 3,
+      "title": "پاوربانک 5000 میلی آمپر AceFast M9",
+      "oldPrice": 1760000,
+      "newPrice": 1450000,
+      "images": "https://www.dastresi.com/upload/filemanager/2024/05/07/Anker-A1647H11-11.jpg"
+    },
+    {
+      "id": 4,
+      "title": "هندزفری بلوتوثی مگ‌دودو مدل HP-0210",
+      "oldPrice": 1090000,
+      "newPrice": 990000,
+      "images": "https://www.dastresi.com/upload/filemanager/2025/08/09/MCDODO-HP210.jpg"
+    },
+    {
+      "id": 5,
+      "title": "پاوربانک 20000 میلی آمپر انکر مدل A1647H11",
+      "oldPrice": 3040000,
+      "newPrice": 2840000,
+      "images": "https://www.dastresi.com/upload/filemanager/2025/07/21/ACEFAST-M9-11.jpg"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+
+      "image": "https://www.dastresi.com/upload/filemanager/2023/04/20/battery.png"
+    },
+    {
+      "id": 2,
+
+      "image": "https://www.dastresi.com/upload/filemanager/2023/04/20/gaming.png"
+    },
+    {
+      "id": 3,
+
+      "image": "https://www.dastresi.com/upload/filemanager/2023/04/20/cable.png"
+    },
+    {
+      "id": 4,
+
+      "image": "https://www.dastresi.com/upload/filemanager/2023/04/20/adaptor.png"
+    },
+    {
+      "id": 5,
+
+      "image": "https://www.dastresi.com/upload/filemanager/2023/04/20/powerbank.png"
+    },
+    {
+      "id": 6,
+
+      "image": "https://www.dastresi.com/upload/filemanager/2023/04/20/handsfree.png"
+    },
+    {
+      "id": 7,
+
+      "image": "https://www.dastresi.com/upload/filemanager/2023/04/20/Holder%20Negahdarande.png"
+    },
+    {
+      "id": 8,
+
+      "image": "https://www.dastresi.com/upload/filemanager/2023/04/20/mobadel%20o%20rabet.png"
+    }
+  ],
+
+  "products": [
+    {
+      "id": 1,
+      "subtitle": " انواع لوازم الکترونیکی",
+      "title": " شارژر دیواری 20 واتی به همراه کابل.",
+      "price": 2250000,
+      "image": "https://www.dastresi.com/upload/filemanager/2025/04/05/Q4010-11.jpg",
+      "available": false
+    },
+    {
+      "id": 2,
+      "subtitle": " انواع لوازم الکترونیکی",
+      "title": "پاوربانک 27600 میلی آمپر 130 وات",
+      "price": 950000,
+      "image": "https://www.dastresi.com/upload/filemanager/2025/01/11/50GREEN-11.jpg",
+      "available": true
+    },
+    {
+      "id": 3,
+      "subtitle": " انواع لوازم الکترونیکی",
+      "title": "کابل شارژ مگنتی تایپ سی به لایتنین...",
+      "price": 5890000,
+      "image": "https://www.dastresi.com/upload/filemanager/2025/01/11/MCDODO-2010-11.jpg",
+      "available": true
+    },
+    {
+      "id": 4,
+      "subtitle": " انواع لوازم الکترونیکی",
+      "title": "ماساژور توپی گرین مدل Green Lion G...",
+      "price": 0,
+      "image": "https://www.dastresi.com/upload/filemanager/2025/04/16/MASSAGE-BALL-11.jpg",
+      "available": false
+    },
+    {
+      "id": 5,
+      "subtitle": " انواع لوازم الکترونیکی",
+      "title": "جویسر 600 میلی لیتر گرین مدل Green...",
+      "price": 0,
+      "image": "https://www.dastresi.com/upload/filemanager/2025/04/16/juser-green7-11.jpg",
+      "available": false
+    },
+    {
+      "id": 6,
+      "subtitle": " انواع لوازم الکترونیکی",
+      "title": " شارژر دیواری 20 واتی به همراه کابل.",
+      "price": 2250000,
+      "image": "https://www.dastresi.com/upload/filemanager/2025/04/05/Q4010-11.jpg",
+      "available": false
+    },
+    {
+      "id": 7,
+      "subtitle": " انواع لوازم الکترونیکی",
+      "title": "پاوربانک 27600 میلی آمپر 130 وات",
+      "price": 950000,
+      "image": "https://www.dastresi.com/upload/filemanager/2025/01/11/50GREEN-11.jpg",
+      "available": true
+    },
+    {
+      "id": 8,
+      "subtitle": " انواع لوازم الکترونیکی",
+      "title": "کابل شارژ مگنتی تایپ سی به لایتنین...",
+      "price": 5890000,
+      "image": "https://www.dastresi.com/upload/filemanager/2025/01/11/MCDODO-2010-11.jpg",
+      "available": true
+    },
+    {
+      "id": 9,
+      "subtitle": " انواع لوازم الکترونیکی",
+      "title": "ماساژور توپی گرین مدل Green Lion G...",
+      "price": 0,
+      "image": "https://www.dastresi.com/upload/filemanager/2025/04/16/MASSAGE-BALL-11.jpg",
+      "available": false
+    },
+    {
+      "id": 10,
+      "subtitle": " انواع لوازم الکترونیکی",
+      "title": "جویسر 600 میلی لیتر گرین مدل Green...",
+      "price": 0,
+      "image": "https://www.dastresi.com/upload/filemanager/2025/04/16/juser-green7-11.jpg",
+      "available": false
+    },
+    {
+      "id": 11,
+      "subtitle": " انواع لوازم الکترونیکی",
+      "title": "کابل شارژ مگنتی تایپ سی به لایتنین...",
+      "price": 5890000,
+      "image": "https://www.dastresi.com/upload/filemanager/2025/01/11/MCDODO-2010-11.jpg",
+      "available": true
+    }
+  ],
+
+  "features": [
+    {
+      "id": 1,
+      "title": "امکان خرید حضوری",
+      "desc": "مشتری گرامی جهت خرید حضوری می‌توانید به آدرس مندرج در پایین سایت مراجعه نمایید.",
+      "image": "https://www.dastresi.com/images/icons/icon4.png"
+    },
+    {
+      "id": 2,
+      "title": "ارسال سریع",
+      "desc": "ارسال از طریق تیپاکس، پست پیشتاز و پیک موتوری (تهران) صورت می‌گیرد.",
+      "image": "https://www.dastresi.com/images/icons/icon3.png"
+    },
+    {
+      "id": 3,
+      "title": "قیمت مناسب با بالاترین کیفیت",
+      "desc": "گروه دسترسی در تلاش است که کالای با کیفیت را با مناسب‌ترین قیمت به دست مشتری برساند.",
+      "image": "https://www.dastresi.com/images/icons/icon1.png"
+    },
+    {
+      "id": 4,
+      "title": "مشاوره تخصصی برای خرید ",
+      "desc": "برای خرید هر محصول با تیم دسترسی در ارتباط باشید تا بهترین انتخاب را انجام دهید.",
+      "image": "https://www.dastresi.com/images/icons/icon2.png"
+    }
+  ],
+  "bestseller": [
+    {
+      "id": 1,
+      "subtitle": " انواع لوازم الکترونیکی",
+      "title": " شارژر دیواری 20 واتی به همراه کابل.",
+      "price": 0,
+      "image": "https://www.dastresi.com/upload/filemanager/2024/10/23/battrey-xiaomi-NIM-1161.jpg",
+      "available": false
+    },
+    {
+      "id": 2,
+      "subtitle": " انواع لوازم الکترونیکی",
+      "title": "پاوربانک 27600 میلی آمپر 130 وات",
+      "oldPrice": 5440000,
+      "price": 950000,
+      "image": "https://www.dastresi.com/upload/filemanager/2024/10/23/battrey-xiaomi-11.jpg",
+      "available": true
+    },
+    {
+      "id": 3,
+      "subtitle": " انواع لوازم الکترونیکی",
+      "title": "کابل شارژ مگنتی تایپ سی به لایتنین...",
+      "oldPrice": 5440000,
+      "price": 5890000,
+      "image": "https://www.dastresi.com/upload/filemanager/2024/09/30/Untitled-1.jpg",
+      "available": true
+    },
+    {
+      "id": 4,
+      "subtitle": " انواع لوازم الکترونیکی",
+      "title": "ماساژور توپی گرین مدل Green Lion G...",
+      "price": 0,
+      "image": "https://www.dastresi.com/upload/filemanager/2025/03/03/MCDODO-4100-11.jpg",
+      "available": false
+    },
+    {
+      "id": 5,
+      "subtitle": " انواع لوازم الکترونیکی",
+      "title": "جویسر 600 میلی لیتر گرین مدل Green...",
+      "price": 0,
+      "image": "https://www.dastresi.com/upload/filemanager/2025/02/13/HADRON-25W-22.jpg",
+      "available": false
+    },
+    {
+      "id": 6,
+      "subtitle": " انواع لوازم الکترونیکی",
+      "title": " شارژر دیواری 20 واتی به همراه کابل.",
+      "price": 0,
+      "image": "https://www.dastresi.com/upload/filemanager/2025/04/12/POMP-GREEN-11.jpg",
+      "available": false
+    },
+    {
+      "id": 7,
+      "subtitle": " انواع لوازم الکترونیکی",
+      "title": "پاوربانک 27600 میلی آمپر 130 وات",
+      "oldPrice": 5440000,
+      "price": 950000,
+      "image": "https://www.dastresi.com/upload/filemanager/2025/01/11/50GREEN-11.jpg",
+      "available": true
+    },
+    {
+      "id": 8,
+      "subtitle": " انواع لوازم الکترونیکی",
+      "title": "کابل شارژ مگنتی تایپ سی به لایتنین...",
+      "oldPrice": 5440000,
+      "price": 5890000,
+      "image": "https://www.dastresi.com/upload/filemanager/2025/01/11/MCDODO-2010-11.jpg",
+      "available": true
+    },
+    {
+      "id": 9,
+      "subtitle": " انواع لوازم الکترونیکی",
+      "title": "ماساژور توپی گرین مدل Green Lion G...",
+      "price": 0,
+      "image": "https://www.dastresi.com/upload/filemanager/2025/04/16/MASSAGE-BALL-11.jpg",
+      "available": false
+    },
+    {
+      "id": 10,
+      "subtitle": " انواع لوازم الکترونیکی",
+      "title": "جویسر 600 میلی لیتر گرین مدل Green...",
+      "price": 0,
+      "image": "https://www.dastresi.com/upload/filemanager/2025/04/16/juser-green7-11.jpg",
+      "available": false
+    },
+    {
+      "id": 11,
+      "subtitle": " انواع لوازم الکترونیکی",
+      "title": "کابل شارژ مگنتی تایپ سی به لایتنین...",
+      "oldPrice": 5440000,
+      "price": 5890000,
+      "image": "https://www.dastresi.com/upload/filemanager/2025/01/11/MCDODO-2010-11.jpg",
+      "available": true
+    }
+  ],
+
+  "brands": [
+    {
+      "id": 1,
+      "image": "https://www.dastresi.com/upload/filemanager/2024/11/21/Untitled-1.jpg"
+    },
+    {
+      "id": 2,
+      "image": "https://www.dastresi.com/upload/filemanager/2022/02/24/logo-1.jpg"
+    },
+    {
+      "id": 3,
+      "image": "https://www.dastresi.com/upload/filemanager/2022/02/22/inoben.jpg"
+    },
+    {
+      "id": 4,
+      "image": "https://www.dastresi.com/upload/filemanager/2022/02/24/Untitled-159.jpg"
+    },
+    {
+      "id": 5,
+
+      "image": "https://www.dastresi.com/upload/filemanager/2022/02/26/H64c19886758b40378c31d5f46c5ae984A.jpg"
+    },
+    {
+      "id": 6,
+      "image": "https://www.dastresi.com/upload/filemanager/2022/03/07/logp.jpg"
+    },
+    {
+      "id": 7,
+      "image": "https://www.dastresi.com/upload/filemanager/2022/03/17/logo.jpg"
+    }
+  ],
+  "articles": [
+    {
+      "id": 1,
+      "image": "https://www.dastresi.com/upload/filemanager/2025/11/08/image.jpg",
+      "title": "پاوربانک شیائومی ۲۰۰۰۰ اصلی + جایگزین    "
+    },
+    {
+      "id": 2,
+      "image": "https://www.dastresi.com/upload/filemanager/2025/01/25/wired-handsfree-phone-dastresi-.jpg",
+      "title": "چطور هندزفری مناسب انتخاب کنیم؟"
+    },
+    {
+      "id": 3,
+      "image": "https://www.digikala.com/mag/wp-content/uploads/2025/11/face-betamethasone-ointment-uses2.jpg",
+      "title": "مقایسه کابل‌های شارژ مختلف"
+    },
+    {
+      "id": 4,
+      "image": "https://www.digikala.com/mag/wp-content/uploads/2025/11/Death_Stranding_Isolations.jpg",
+      "title": "جویسر 600 میلی لیتر گرین مدل Green..."
+    },
+    {
+      "id": 5,
+      "image": "https://www.digikala.com/mag/wp-content/uploads/2025/11/face-betamethasone-ointment-uses2.jpg ",
+      "title": "چطور هندزفری مناسب انتخاب کنیم؟"
+    },
+    {
+      "id": 6,
+      "image": "https://www.dastresi.com/upload/filemanager/2025/11/08/image.jpg",
+      "title": "مقایسه کابل‌های شارژ مختلف"
+    },
+    {
+      "id": 7,
+      "image": "https://www.digikala.com/mag/wp-content/uploads/2025/11/Death_Stranding_Isolations.jpg",
+      "title": "کیت تمیزکننده صفحه نمایش Somo "
+    },
+    {
+      "id": 8,
+      "image": "https://www.dastresi.com/upload/filemanager/2025/01/25/wired-handsfree-phone-dastresi-.jpg",
+      "title": "چطور هندزفری مناسب انتخاب کنیم؟"
+    }
+  ],
+  "footer": {
+    "about": "فروشگاه دسترسی فعالیت خود را از سال 1389 به صورت فروش فیزیکی کالا در حوزه لوازم جانبی کامپیوتر و موبایل در تهران شروع کرد و از سال 1398 از طریق پیج اینستاگرام وارد فروش آنلاین شد و به خاطر ارائه کالای اصلی و مشاوره های دقیق در بازه زمانی کوتاهی توانست اعتماد بسیاری از مشتریانش را جلب کند و سرانجام در سال 1399 فروش سایت را هم به فعالیت های خود اضافه کرد تا اینکه بتواند با بررسی دقیق کالاها انتخاب صحیح را به ارمغان آورد. و امروز دسترسی فعالیت خود را در زمینه لوازم جانبی، ساعت هوشمند، هندزفری و هدفون، تجهیزات ذخیره سازی، کابل شارژ، باتری و شارژر ادامه میدهد و هزاران گجت جذاب ادامه میدهد.",
+    "links": [
+      "باشگاه مشتریان",
+      "سوالات متداول",
+      "پیگیری سفارش",
+      "شرایط و قوانین",
+      "ارتباط با ما",
+      "درباره ما"
+    ],
+    
+    "instagram": "https://instagram.com"
+  }
+}

@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@plugin "daisyui";
+
+@font-face {
+  font-family: "nazanin";
+  src: url("./fonts/B-NAZANIN.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-family: "samim";
+  src: url(./fonts/Samim.ttf) format("truetype");
+}
+@theme {
+  --font-nazanin: nazanin;
+  --font-samim:samim;
+}

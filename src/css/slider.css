@@ -1,0 +1,79 @@
+.slider .swiper {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.slider .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider .swiper-slide img {
+  width: 100%;
+  height: auto; /* به جای ارتفاع ثابت */
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* برای موبایل */
+@media (max-width: 768px) {
+  .slider .swiper {
+    width: 90%;
+  }
+  .slider .swiper-slide img {
+    height: auto;
+  }
+}
+
+/* رنگ پایه (حالت عادی) */
+.swiper-pagination-bullet {
+  background-color: #d3d3d3; /* رنگ دلخواه برای حالت غیرفعال */
+}
+
+/* رنگ حالت فعال */
+.swiper-pagination-bullet-active {
+  background-color: #323232; /* رنگ دلخواه برای اسلاید فعال */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+}
+
+/* فلش‌ها */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 15px; /* سایز فلش */
+  color: rgb(158, 157, 157) !important; /* رنگ ثابت */
+}
+
+/* جلوگیری از تغییر opacity در حالت غیرفعال */
+.swiper-button-next.swiper-button-disabled::after,
+.swiper-button-prev.swiper-button-disabled::after {
+  opacity: 1 !important;
+  color: rgb(158, 157, 157) !important;
+}
+
+/* موقعیت دکمه‌ها */
+.swiper-button-prev {
+ 
+  left: 10px;
+}
+
+.swiper-button-next {
+  
+  right: 10px;
+}
