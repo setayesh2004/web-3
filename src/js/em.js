@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", async () => {
-  // ===== اعداد انگلیسی به فارسی
+  // ===== اعداد انگلیسی به فارسی  
   function toPersianNumber(num) {
     const persianDigits = "۰۱۲۳۴۵۶۷۸۹";
     return num.toString().replace(/\d/g, (d) => persianDigits[d]);
   }
 
-  // ===== منوی موبایل
+  // ===== منوی موبایل 
   const mobileBtn = document.getElementById("mobile-menu-btn");
   const mobileMenu = document.getElementById("mobile-menu");
 
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   }
 
-  // ===== مگا منو
+  // ===== مگا منو  
   const megaTrigger = document.getElementById("mega-menu-trigger");
   const megaMenu = document.getElementById("mega-menu");
 
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   }
 
-  // ===== زیرمنوهای آکاردئونی
+  // ===== زیرمنوهای آکاردئونی 
   const toggles = document.querySelectorAll(".menu-toggle");
   toggles.forEach((btn) => {
     btn.addEventListener("click", (e) => {
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       .forEach((sub) => sub.classList.add("hidden"));
   });
 
-  // ===== آکاردئون زیرمنوها
+  // ===== آکاردئون زیرمنوها  
   document.querySelectorAll(".accordion-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
       const content = btn.nextElementSibling;
@@ -63,18 +63,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   });
 
-  // ===== اسلایدر
+  // ===== اسلایدر  
   async function slider() {
     try {
-      const res = await fetch(
-        "https://api.jsonbin.io/v3/b/692476f9ae596e708f6df473/latest",
-        {
-          method: "GET",
-          headers: { "Content-Type": "application/json" },
-        }
-      );
-      const result = await res.json();
-      const data = result.record.slider; // slider داخل record
+      const res = await fetch("http://localhost:3004/slider");
+      const data = await res.json();
       const slidesHTML = data.map(
         (item) =>
           `<div class="swiper-slide"><img src="${item.images}" alt="${item.alt}" /></div>`
@@ -106,26 +99,18 @@ document.addEventListener("DOMContentLoaded", async () => {
       },
     });
   }
-  //=======روز های اف خورده
+
   async function loadOffDays() {
     try {
-      const res = await fetch(
-        "https://api.jsonbin.io/v3/b/692476f9ae596e708f6df473/latest",
-        {
-          method: "GET",
-          headers: { "Content-Type": "application/json" },
-        }
-      );
-      const result = await res.json();
-      const data = result.record.offdays;
+      const res = await fetch("http://localhost:3004/offdays");
+      const data = await res.json();
       const container = document.getElementById("offdays-container");
-
       if (!container) return;
 
       container.innerHTML = "";
       container.className =
         "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4";
-
+      
       const col1 = document.createElement("div");
       col1.className = "flex flex-col gap-4";
 
@@ -167,6 +152,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         col1.appendChild(card);
       });
 
+     
       const col2Data = data[3];
       const discount4 = Math.round(
         100 - (col2Data.newPrice / col2Data.oldPrice) * 100
@@ -197,6 +183,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       </div>
     `;
 
+ 
       const col3Data = data[4];
       const discount5 = Math.round(
         100 - (col3Data.newPrice / col3Data.oldPrice) * 100
@@ -226,9 +213,9 @@ document.addEventListener("DOMContentLoaded", async () => {
         </div>
       </div>
     `;
-      container.appendChild(col2);
-      container.appendChild(col3);
-      container.appendChild(col1);
+      container.appendChild(col2); 
+      container.appendChild(col3);  
+      container.appendChild(col1);  
     } catch (err) {
       console.error("خطا در دریافت داده‌های تخفیف روزانه:", err.message);
     }
@@ -267,18 +254,11 @@ document.addEventListener("DOMContentLoaded", async () => {
   todayEnd.setHours(23, 59, 59, 999);
   startOffDaysTimer(todayEnd);
 
-  // ===== دسته‌بندی‌های منتخب
+  // ===== دسته‌بندی‌های منتخب  
   async function loadCategories() {
     try {
-      const res = await fetch(
-        "https://api.jsonbin.io/v3/b/692476f9ae596e708f6df473/latest",
-        {
-          method: "GET",
-          headers: { "Content-Type": "application/json" },
-        }
-      );
-      const result = await res.json();
-      const data = result.record.categories;
+      const res = await fetch("http://localhost:3004/categories");
+      const data = await res.json();
 
       const wrapper = document.getElementById("categories-wrapper");
       wrapper.innerHTML = "";
@@ -292,13 +272,14 @@ document.addEventListener("DOMContentLoaded", async () => {
       `;
       });
 
+  
       new Swiper(".categoriesSwiper", {
         slidesPerView: 6,
         spaceBetween: 15,
-        loop: true,
+        loop: true,  
         autoplay: {
-          delay: 2000,
-          disableOnInteraction: false,
+          delay: 2000,  
+          disableOnInteraction: false, 
         },
         navigation: {
           nextEl: ".swiper-button-next",
@@ -317,7 +298,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   await loadCategories();
-  // ===== (بخش همین الان موجود شد...)
+  // ===== (بخش همین الان موجود شد...)  
 
   await loadNewProducts();
 
@@ -326,18 +307,13 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (!swiperWrapper) return;
 
     try {
-      const res = await fetch(
-        "https://api.jsonbin.io/v3/b/692476f9ae596e708f6df473/latest",
-        {
-          method: "GET",
-          headers: { "Content-Type": "application/json" },
-        }
-      );
-      const result = await res.json();
-      const products = result.record.products;
+      const res = await fetch("http://localhost:3004/products");
+      const products = await res.json();
+      console.log(products);  
 
+       
       swiperWrapper.innerHTML = "";
-
+ 
       products.forEach((item) => {
         const slide = document.createElement("div");
         slide.className = "swiper-slide";
@@ -364,18 +340,19 @@ document.addEventListener("DOMContentLoaded", async () => {
         swiperWrapper.appendChild(slide);
       });
 
+ 
       if (!window.newProductsSwiper) {
         window.newProductsSwiper = new Swiper(".newProductsSwiper", {
           slidesPerView: 3,
           spaceBetween: 15,
-          loop: true,
+          loop: true,  
           navigation: {
             nextEl: ".newProductsSwiper .swiper-button-next",
             prevEl: ".newProductsSwiper .swiper-button-prev",
           },
           autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
+            delay: 3000,  
+            disableOnInteraction: false,  
           },
           breakpoints: {
             320: { slidesPerView: 1 },
@@ -396,15 +373,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   async function loadFeatures() {
     try {
-      const res = await fetch(
-        "https://api.jsonbin.io/v3/b/692476f9ae596e708f6df473/latest",
-        {
-          method: "GET",
-          headers: { "Content-Type": "application/json" },
-        }
-      );
-      const result = await res.json();
-      const data = result.record.features;
+      const res = await fetch("http://localhost:3004/features");
+      const data = await res.json();
 
       container.innerHTML = data
         .map((feature) => {
@@ -433,18 +403,14 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (!swiperWrapper) return;
 
     try {
-      const res = await fetch(
-        "https://api.jsonbin.io/v3/b/692476f9ae596e708f6df473/latest",
-        {
-          method: "GET",
-          headers: { "Content-Type": "application/json" },
-        }
-      );
-      const result = await res.json();
-      const bestseller = result.record.bestseller;
+      const res = await fetch("http://localhost:3004/bestseller");
+      const bestseller = await res.json();
+      console.log(bestseller);   
 
+ 
       swiperWrapper.innerHTML = "";
 
+ 
       bestseller.forEach((item) => {
         const slide = document.createElement("div");
         slide.className = "swiper-slide";
@@ -478,18 +444,19 @@ document.addEventListener("DOMContentLoaded", async () => {
         swiperWrapper.appendChild(slide);
       });
 
+     
       if (!window.bestsellerSwiper) {
         window.bestsellerSwiper = new Swiper(".bestsellerSwiper", {
           slidesPerView: 3,
           spaceBetween: 15,
-          loop: true,
+          loop: true,  
           navigation: {
             nextEl: ".bestsellerSwiper .swiper-button-next",
             prevEl: ".bestsellerSwiper .swiper-button-prev",
           },
           autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
+            delay: 3000,  
+            disableOnInteraction: false,  
           },
           breakpoints: {
             320: { slidesPerView: 1 },
@@ -505,18 +472,11 @@ document.addEventListener("DOMContentLoaded", async () => {
       console.error("خطا در بارگذاری محصولات:", err);
     }
   }
-  // ===== برندهای محبوب
+  // ===== برندهای محبوب 
   async function loadBrands() {
     try {
-      const res = await fetch(
-        "https://api.jsonbin.io/v3/b/692476f9ae596e708f6df473/latest",
-        {
-          method: "GET",
-          headers: { "Content-Type": "application/json" },
-        }
-      );
-      const result = await res.json();
-      const data = result.record.brands;
+      const res = await fetch("http://localhost:3004/brands");
+      const data = await res.json();
 
       const wrapper = document.getElementById("brands-wrapper");
       wrapper.innerHTML = "";
@@ -530,13 +490,14 @@ document.addEventListener("DOMContentLoaded", async () => {
       `;
       });
 
+      
       new Swiper(".brandsSwiper", {
         slidesPerView: 6,
         spaceBetween: 5,
-        loop: true,
+        loop: true,  
         autoplay: {
-          delay: 2000,
-          disableOnInteraction: false,
+          delay: 2000, 
+          disableOnInteraction: false,  
         },
         navigation: {
           nextEl: ".swiper-button-next",
@@ -557,19 +518,13 @@ document.addEventListener("DOMContentLoaded", async () => {
   //=======مقالات
   async function loadArticles() {
     try {
-      const res = await fetch(
-        "https://api.jsonbin.io/v3/b/692476f9ae596e708f6df473/latest",
-        {
-          method: "GET",
-          headers: { "Content-Type": "application/json" },
-        }
-      );
-      const result = await res.json();
-      const data = result.record.articles;
+      const res = await fetch("http://localhost:3004/articles");
+      const data = await res.json();
 
       const wrapper = document.getElementById("articles-wrapper");
-      wrapper.innerHTML = "";
+      wrapper.innerHTML = ""; 
 
+      
       data.forEach((article) => {
         wrapper.insertAdjacentHTML(
           "beforeend",
@@ -597,8 +552,9 @@ document.addEventListener("DOMContentLoaded", async () => {
         );
       });
 
+       
       new Swiper(".articlesSwiper", {
-        slidesPerView: 1.2,
+        slidesPerView: 1.2,  
         spaceBetween: 12,
         loop: false,
 
@@ -611,6 +567,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             slidesPerView: 4,
             spaceBetween: 15,
 
+          
             allowTouchMove: false,
           },
         },
@@ -652,15 +609,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   //===فوتر
   async function loadFooter() {
     try {
-      const res = await fetch(
-        "https://api.jsonbin.io/v3/b/692476f9ae596e708f6df473/latest",
-        {
-          method: "GET",
-          headers: { "Content-Type": "application/json" },
-        }
-      );
-      const result = await res.json();
-      const data = result.record.footer;
+      const response = await fetch("http://localhost:3004/footer");
+      const data = await response.json();
+
+      const footer = document.getElementById("footer");
 
       footer.innerHTML = `
       <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12 px-6 py-6 md:py-[20px]">
