@@ -7,8 +7,12 @@
   src: url("./fonts/B-NAZANIN.TTF") format("truetype");
   font-weight: normal;
   font-style: normal;
+}
+@font-face {
   font-family: "samim";
-  src: url(./fonts/Samim.ttf) format("truetype");
+  src: url("./fonts/Samim.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 @theme {
   --font-nazanin: nazanin;
